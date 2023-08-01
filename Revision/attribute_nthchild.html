@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+    <style>
+        input[type="text"]{
+            background-color: aquamarine;
+            padding: 14px;
+            margin: 12px;    
+        }
+        li:nth-child(even){
+            color: brown;
+        }
+        li:nth-child(odd){
+            background-color: blueviolet;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="no.php">
+            <input type="text" name="myname" placeholder="Enter your name"><br>
+            <input type="password" name="mypass" placeholder="Enter your password"><br>
+            <input type="email" name="myemail" placeholder="Enter your email"><br>
+        </form>
+        <ul>
+            <li id="item-1">First</li>
+            <li id="item-2">Second</li>
+            <li id="item-3">Third</li>
+            <li id="item-4">Fourth</li>
+            <li id="item-5">Fivth</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector's</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Kanit">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            
+           
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.3;
+            
+        }
+        .navigation-bar {
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            font-family: 'Kanit', sans-serif;
+            list-style: none;
+            padding: 20px 24px;
+        }
+
+        section {
+            height: 348px;
+            /* border: 2px solid rgb(219, 74, 74); */
+            display: flex;
+            flex-direction: column;
+            margin: 2px 215px;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        p {
+            font-family: 'Kanit', sans-serif;
+            text-align: center;
+        }
+
+        /* section::before {
+            content: "This is a Content";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation-bar">
+                <li class="item">Home </li>
+                <li class="item">About Us</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>    
+        <section>
+            <h1>Welcome to Beautiful World</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla vitae atque officiis. Tempore suscipit
+                veniam eligendi? Excepturi totam voluptas dicta voluptatibus incidunt velit? Cumque doloribus inventore
+                tempore.</p>
+        </section>
+        <hr>
+
+    
+</body>
+
+</html>

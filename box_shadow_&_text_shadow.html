@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 20px 13px;
+            /* border: 2px solid red; */
+            margin:20px 12px ;
+            background-color: rgb(219, 185, 185);
+
+            /* box-shadow: offset-x,offset-y,color; */
+            /* box-shadow: 10px 13px rgb(56, 49, 63); */
+            /* box-shadow: -10px -13px rgb(56, 49, 63); */
+
+            /* box-shadow: offset-x,offset-y,blur radius,color; */
+            box-shadow: 7px 5px 10px rgb(56, 49, 63);
+            /* box-shadow: -7px -5px 10px rgb(56, 49, 63); */
+
+            /* box-shadow: offset-x,offset-y,blur radius,spread radius,color; */
+            /* box-shadow: 7px 5px 10px 34px rgb(56, 49, 63); */
+
+            text-shadow: 4px 2px 2px wheat;
+
+
+            
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card" id="case-1">
+           <h2>Card1</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia enim odit fugiat nobis consequuntur provident suscipit, expedita doloribus dolore animi necessitatibus reprehenderit. Omnis laudantium quibusdam id quasi necessitatibus maxime distinctio veritatis, nostrum tenetur tempore.</p>
+        </div>
+        <div class="card" id="case-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit doloribus aspernatur dolore aut error omnis tempora atque, non voluptate voluptates quos cum iusto accusamus? Deleniti optio omnis enim possimus. Ex earum mollitia hic eligendi!</p>
+        </div>
+        <div class="card" id="case-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dicta, architecto quia sequi velit odio error illum, doloribus commodi pariatur autem accusantium dolorum praesentium quod iste. Deleniti dolorem et doloremque quos ducimus. Voluptatem, rem!</p>
+
+        </div>
+    </div>
+</body>
+</html>

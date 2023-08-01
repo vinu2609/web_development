@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            height: 2000px;
+        }
+        .box{
+            /* display: inline-block; */
+            margin: 4px;
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: blue;
+        }
+        #box2{
+            background-color: aqua;
+            z-index: 34;
+        }
+        /* positions */
+        #box3{
+           
+            /* position: absolute;
+            top: 22px;
+            left: 34px; */
+            /* position: fixed;
+            right: 4px; */
+            /* position: sticky;
+            top: 4px; */
+            z-index: 22;
+
+            background-color: blueviolet;
+            /* VISIBLITY AND Z-INDEX */
+            /* visibility: hidden; */
+            /* display: none; */
+            
+
+        }
+        #box4{
+           background-color: brown;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    </div>
+</body>
+
+</html>

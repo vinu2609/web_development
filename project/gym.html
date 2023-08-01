@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinu's Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.google.com/specimen/IBM+Plex+Sans+Thai">
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Headland+One?preview.size=42&query=head">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'IBM Plex Sans Thai', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/pexels-photo-2468339.jpeg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        color: white
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 18px;
+        text-align: center;
+    }
+
+    .left img {
+        width: 80px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        /* border: 2px solid purple; */
+        display: block;
+        width: 700px;
+        margin: 12px auto;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 22px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover {
+        background-color: rgb(243, 233, 223)
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(216, 181, 181);
+    }
+
+    .right {
+
+        /* border: 2px solid green; */
+        position: absolute;
+        right: 32px;
+        top: 18px;
+    }
+
+    .btn {
+        font-family: 'IBM Plex Sans Thai', sans-serif;
+        padding: 4px 14px;
+        margin: 0px 8px;
+        background-color: black;
+        color: white;
+        border: 2px solid gray;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(43, 41, 41);
+    }
+
+    .container {
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 70px;
+        margin: 106px 80px;
+        width: 43%;
+    }
+
+    #heading {
+        font-family: 'Headland One', serif;
+        text-align: center;
+        font-size:50px;
+    }
+
+    .form-group input {
+        font-family: 'IBM Plex Sans Thai', sans-serif;
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 10px;
+        margin: 12px auto;
+        border-radius:12px;
+        font-size: 22px;
+        border: 2px solid black;
+    }
+    .container button{
+        display: block;
+        width: 470px;
+        margin: 14px auto;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 12px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/weight-1399281__340.webp" alt="">
+            <div>
+                Vinu's Fitness
+            </div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Know</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 id="heading">Join the best gym of Dhar now</h1>
+        <form action="noactoin.php">
+            <div class="form-group">
+                <input type="text" name="myName" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="myAge" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="myGender" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="myLocality" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="email" name="myname" placeholder="Enter Your Email Addres">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

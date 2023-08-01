@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox in CSS</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* some flex Properties for flex container */
+            flex-direction: row;
+            /*(default value is row..)*/
+            flex-wrap: wrap;
+            /* flex-flow: row-reverse wrap-reverse; */
+
+            /* justify-content:space-between;
+            justify-content:space-evenly; */
+            /* justify-content:space-around; */
+            /* align-items:flex-end; */
+        }
+
+        .item {
+            width: 160px;
+            height: 160px;
+            background-color: rgb(180, 116, 240);
+            padding: 4px;
+            margin: 8px;
+            border: 2px solid rgba(114, 34, 4, 0.856);
+        }
+
+        #box1 {
+            /* order: 450; */
+            /* Higher the order, later it shows up in the container */
+            flex-grow: 2 ;
+        }
+
+        #box2 {
+            /* flex-grow: 3; */
+            flex-shrink:3;
+            
+        }
+
+        #box3 {
+            order : 450;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="box1">First Box</div>
+        <div class="item" id="box2">Second Box</div>
+        <div class="item" id="box3">Third Box</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            margin: 4px;
+            padding: 4px;
+            font-size: 55px;
+            text-align: center;
+            display: none;
+        }
+
+        @media (max-width: 300px) {
+            #box-1 {
+                display: block;
+                border: 2px solid blue;
+                background-color: rgb(64, 155, 230);
+            }
+        }
+
+        @media (min-width: 300px) and (max-width: 600px) {
+            #box-2 {
+                display: block;
+                border: 2px solid rgb(231, 55, 113);
+                background-color: rgb(179, 108, 153);
+            }
+        }
+
+        @media (min-width:600px) and (max-width: 900px) {
+            #box-3 {
+                display: block;
+                border: 2px solid purple;
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width:900px) and (max-width:1200px) {
+            #box-4 {
+                display: block;
+                border: 2px solid rgb(8, 176, 137);
+                background-color: rgb(65, 152, 106);
+            }
+        }
+
+        @media (min-width:1200px) {
+            #box-5 {
+                display: block;
+                border: 2px solid rgb(161, 161, 14);
+                background-color: rgb(197, 197, 127);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">I am a Desktop Computer</div>
+    <div class="box" id="box-2">I am a Mobile Phone</div>
+    <div class="box" id="box-3">I am a Tablet</div>
+    <div class="box" id="box-4">I am a Iphone</div>
+    <div class="box" id="box-5">I am a Bluetooth</div>
+</body>
+
+</html>

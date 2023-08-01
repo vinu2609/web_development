@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body{
+            color: white;
+            background-color: black;
+            font-family: 'Nunito Sans', sans-serif;
+            
+        }
+        header::before{
+            background: url(https://images.unsplash.com/photo-1549449390-012d06a7d7c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)no-repeat center center/cover;
+           content: "";
+           position: absolute;
+           top: 0px;
+           left: 0px;
+           width: 100%;
+           height: 100%;
+           z-index: -1;
+           opacity: 0.5;
+        }
+        .navigation{
+            
+            display: flex;
+            font-size: larger;
+        }
+        .item{
+            list-style: none;
+            padding: 24px;
+        }
+        section{
+            height: 250px;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            margin: 2px 215px ;
+            justify-content: center;
+            align-items: center;
+            padding: 2px 3px;
+            color: rgb(218, 99, 8);
+        }
+        p{
+            text-align: center;
+        }
+        h1{
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Vinu's Blog</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad excepturi recusandae harum aspernatur, vel nisi odit architecto voluptatum officia tempore, doloribus dignissimos cumque nemo voluptates repudiandae rem? Eos, aperiam.</p>
+    </section>
+</body>
+</html>
